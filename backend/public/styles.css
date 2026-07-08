@@ -1,0 +1,739 @@
+/*=============================
+      RESET
+=============================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Segoe UI",sans-serif;
+}
+
+body{
+
+    background:#0f172a;
+
+    color:#fff;
+
+    height:100vh;
+
+    overflow:hidden;
+
+}
+
+/*=============================
+      CONTENEDOR
+=============================*/
+
+.app{
+
+    width:100%;
+    height:100vh;
+
+    display:grid;
+
+    grid-template-columns:320px 1fr;
+
+    background:#111827;
+
+}
+
+/*=============================
+      SIDEBAR
+=============================*/
+
+.sidebar{
+
+    background:#1f2937;
+
+    border-right:1px solid #374151;
+
+    display:flex;
+
+    flex-direction:column;
+
+    padding:30px;
+
+}
+
+.logo-area{
+
+    text-align:center;
+
+}
+
+.logo{
+
+    width:90px;
+    height:90px;
+
+    margin:auto;
+
+    border-radius:22px;
+
+    background:linear-gradient(135deg,#ef4444,#dc2626);
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:38px;
+
+    margin-bottom:20px;
+
+    box-shadow:0 15px 35px rgba(239,68,68,.35);
+
+}
+
+.logo i{
+
+    color:white;
+
+}
+
+.logo-area h1{
+
+    font-size:30px;
+
+    margin-bottom:10px;
+
+}
+
+.logo-area p{
+
+    color:#9ca3af;
+
+    line-height:1.6;
+
+    margin-bottom:35px;
+
+}
+
+/*=============================
+      MENU
+=============================*/
+
+.menu{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:15px;
+
+    flex:1;
+
+}
+
+.menu-card{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    padding:18px;
+
+    border-radius:16px;
+
+    background:#111827;
+
+    border:1px solid #374151;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.menu-card:hover{
+
+    border-color:#ef4444;
+
+    transform:translateY(-2px);
+
+    background:#182334;
+
+}
+
+.menu-card i{
+
+    color:#ef4444;
+
+    font-size:20px;
+
+    width:25px;
+
+}
+
+.menu-card span{
+
+    color:#e5e7eb;
+
+    font-weight:500;
+
+}
+
+/*=============================
+      BOTON LIMPIAR
+=============================*/
+
+#clearBtn{
+
+    margin-top:30px;
+
+    height:55px;
+
+    border:none;
+
+    border-radius:15px;
+
+    background:#ef4444;
+
+    color:white;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+#clearBtn:hover{
+
+    background:#dc2626;
+
+    transform:translateY(-2px);
+
+}
+
+#clearBtn i{
+
+    margin-right:10px;
+
+}
+
+/*=============================
+      CHAT
+=============================*/
+
+.chat{
+
+    display:flex;
+
+    flex-direction:column;
+
+    background:#111827;
+
+}
+
+/*=============================
+      HEADER
+=============================*/
+
+.chat-header{
+
+    height:80px;
+
+    border-bottom:1px solid #374151;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    padding:0 30px;
+
+}
+
+.header-left{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+}
+
+.ai-avatar{
+
+    width:55px;
+
+    height:55px;
+
+    border-radius:50%;
+
+    background:#ef4444;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:22px;
+
+}
+
+.ai-avatar i{
+
+    color:white;
+
+}
+
+.header-left h2{
+
+    font-size:22px;
+
+    margin-bottom:5px;
+
+}
+
+.status{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    color:#9ca3af;
+
+    font-size:14px;
+
+}
+
+.dot{
+
+    width:10px;
+
+    height:10px;
+
+    border-radius:50%;
+
+    background:#22c55e;
+
+    box-shadow:0 0 12px #22c55e;
+
+}
+
+/*=============================
+      BIENVENIDA
+=============================*/
+
+.welcome{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    justify-content:center;
+
+    text-align:center;
+
+    height:100%;
+
+    max-width:650px;
+
+    margin:auto;
+
+}
+
+.welcome-icon{
+
+    width:90px;
+
+    height:90px;
+
+    border-radius:25px;
+
+    background:#ef4444;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:38px;
+
+    margin-bottom:25px;
+
+}
+
+.welcome h2{
+
+    font-size:34px;
+
+    margin-bottom:15px;
+
+}
+
+.welcome p{
+
+    color:#9ca3af;
+
+    font-size:17px;
+
+    line-height:1.8;
+
+}
+
+/*=============================
+      MENSAJES
+=============================*/
+
+.messages{
+
+    flex:1;
+
+    overflow-y:auto;
+
+    overflow-x:hidden;
+
+    padding:35px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+    min-height:0;
+
+}
+
+.message{
+
+    max-width:75%;
+
+    padding:18px 22px;
+
+    border-radius:18px;
+
+    line-height:1.7;
+
+    font-size:15px;
+
+    animation:fade .3s ease;
+
+    word-wrap:break-word;
+
+    white-space:pre-wrap;
+
+}
+
+/*=============================
+      MENSAJE USUARIO
+=============================*/
+
+.user{
+
+    align-self:flex-end;
+
+    background:#ef4444;
+
+    color:white;
+
+    border-bottom-right-radius:6px;
+
+    box-shadow:0 10px 25px rgba(239,68,68,.25);
+
+}
+
+/*=============================
+      MENSAJE IA
+=============================*/
+
+.assistant{
+
+    align-self:flex-start;
+
+    background:#1f2937;
+
+    border:1px solid #374151;
+
+    color:#f3f4f6;
+
+    border-bottom-left-radius:6px;
+
+}
+
+/*=============================
+      MENSAJE ERROR
+=============================*/
+
+.error{
+
+    background:#b91c1c;
+
+    color:white;
+
+}
+
+/*=============================
+      COMPOSER
+=============================*/
+
+.composer{
+
+    padding:25px;
+
+    border-top:1px solid #374151;
+
+    background:#111827;
+
+}
+
+.input-container{
+
+    display:flex;
+
+    align-items:flex-end;
+
+    gap:15px;
+
+    background:#1f2937;
+
+    border:1px solid #374151;
+
+    border-radius:18px;
+
+    padding:12px;
+
+    transition:.25s;
+
+}
+
+.input-container:focus-within{
+
+    border-color:#ef4444;
+
+    box-shadow:0 0 0 4px rgba(239,68,68,.08);
+
+}
+
+/*=============================
+      TEXTAREA
+=============================*/
+
+textarea{
+
+    flex:1;
+
+    background:transparent;
+
+    border:none;
+
+    resize:none;
+
+    outline:none;
+
+    color:white;
+
+    font-size:16px;
+
+    line-height:1.6;
+
+    min-height:28px;
+
+    max-height:180px;
+
+}
+
+textarea::placeholder{
+
+    color:#9ca3af;
+
+}
+
+/*=============================
+      BOTON ENVIAR
+=============================*/
+
+.composer button{
+
+    width:52px;
+
+    height:52px;
+
+    border:none;
+
+    border-radius:14px;
+
+    background:#ef4444;
+
+    color:white;
+
+    font-size:18px;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+}
+
+.composer button:hover{
+
+    background:#dc2626;
+
+    transform:translateY(-2px);
+
+}
+
+.composer button:active{
+
+    transform:scale(.95);
+
+}
+
+/*=============================
+      SCROLL
+=============================*/
+
+::-webkit-scrollbar{
+
+    width:8px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#111827;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#374151;
+
+    border-radius:10px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:#ef4444;
+
+}
+
+/*=============================
+      ANIMACIONES
+=============================*/
+
+@keyframes fade{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(15px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/*=============================
+      RESPONSIVE
+=============================*/
+
+@media(max-width:900px){
+
+    .app{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .sidebar{
+
+        display:none;
+
+    }
+
+    .chat-header{
+
+        padding:0 20px;
+
+    }
+
+    .messages{
+
+        padding:20px;
+
+    }
+
+    .message{
+
+        max-width:90%;
+
+    }
+
+    .composer{
+
+        padding:18px;
+
+    }
+
+}
+
+@media(max-width:600px){
+
+    .header-left h2{
+
+        font-size:18px;
+
+    }
+
+    .status{
+
+        font-size:12px;
+
+    }
+
+    .composer button{
+
+        width:48px;
+
+        height:48px;
+
+    }
+
+    textarea{
+
+        font-size:15px;
+
+    }
+
+}
+.chat{
+
+    display:flex;
+
+    flex-direction:column;
+
+    background:#111827;
+
+    height:100vh;
+
+    overflow:hidden;
+
+}

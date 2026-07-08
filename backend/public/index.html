@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitLab AI</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Iconos -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <main class="app">
+
+        <!-- ================= SIDEBAR ================= -->
+
+        <aside class="sidebar">
+
+            <div class="logo-area">
+
+                <div class="logo">
+                    <i class="fa-solid fa-dumbbell"></i>
+                </div>
+
+                <h1>FitLab AI</h1>
+
+                <p>
+                    Tu entrenador inteligente para entrenamiento, nutrición y rendimiento.
+                </p>
+
+            </div>
+
+            <div class="menu">
+
+                <div class="menu-card">
+                    <i class="fa-solid fa-dumbbell"></i>
+                    <span>Rutinas personalizadas</span>
+                </div>
+
+                <div class="menu-card">
+                    <i class="fa-solid fa-utensils"></i>
+                    <span>Nutrición deportiva</span>
+                </div>
+
+                <div class="menu-card">
+                    <i class="fa-solid fa-chart-line"></i>
+                    <span>Seguimiento de progreso</span>
+                </div>
+
+                <div class="menu-card">
+                    <i class="fa-solid fa-heart-pulse"></i>
+                    <span>Consejos saludables</span>
+                </div>
+
+            </div>
+
+            <button id="clearBtn">
+                <i class="fa-solid fa-trash"></i>
+                Limpiar conversación
+            </button>
+
+        </aside>
+
+        <!-- ================= CHAT ================= -->
+
+        <section class="chat">
+
+            <header class="chat-header">
+
+                <div class="header-left">
+
+                    <div class="ai-avatar">
+                        <i class="fa-solid fa-robot"></i>
+                    </div>
+
+                    <div>
+
+                        <h2>FitLab AI</h2>
+
+                        <div class="status">
+
+                            <span class="dot"></span>
+
+                            <span>Asistente en línea</span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </header>
+
+            <!-- MENSAJES -->
+
+            <div id="messages" class="messages">
+
+                <div class="welcome">
+
+                    <div class="welcome-icon">
+                        <i class="fa-solid fa-dumbbell"></i>
+                    </div>
+
+                    <h2>¡Bienvenido a FitLab AI!</h2>
+
+                    <p>
+                        Pregúntame sobre entrenamiento, nutrición, ejercicios,
+                        suplementación o cualquier tema relacionado con el gimnasio.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- ESCRIBIR MENSAJE -->
+
+            <form id="chatForm" class="composer">
+
+                <div class="input-container">
+
+                    <textarea
+                        id="prompt"
+                        rows="1"
+                        placeholder="Escribe tu pregunta..."
+                    ></textarea>
+
+                    <button type="submit">
+
+                        <i class="fa-solid fa-paper-plane"></i>
+
+                    </button>
+
+                </div>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
