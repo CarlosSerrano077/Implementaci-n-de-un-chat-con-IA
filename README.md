@@ -1,4 +1,4 @@
-# 🤖 FitLab AI Chatbot
+# FitLab AI Chatbot
 
 FitLab AI Chatbot es un asistente inteligente desarrollado como complemento de la aplicación web **FitLab**, una plataforma enfocada en el entrenamiento físico, la nutrición y el bienestar.
 
@@ -6,19 +6,19 @@ El chatbot permite a los usuarios realizar consultas de manera natural y recibir
 
 ---
 
-## 📌 Características
+##  Características
 
-- 💬 Chat en tiempo real.
-- 🤖 Integración con modelos de Inteligencia Artificial de Hugging Face.
-- 🎨 Interfaz moderna inspirada en la aplicación FitLab.
-- 📱 Diseño responsive para dispositivos móviles.
-- 🗑️ Opción para limpiar la conversación.
-- ⚡ Respuestas rápidas y dinámicas.
-- 🌐 Comunicación mediante API REST.
+-  Chat en tiempo real.
+-  Integración con modelos de Inteligencia Artificial de Hugging Face.
+-  Interfaz moderna inspirada en la aplicación FitLab.
+-  Diseño responsive para dispositivos móviles.
+-  Opción para limpiar la conversación.
+-  Respuestas rápidas y dinámicas.
+-  Comunicación mediante API REST.
 
 ---
 
-## 🛠 Tecnologías utilizadas
+##  Tecnologías utilizadas
 
 ### Frontend
 
@@ -38,7 +38,7 @@ El chatbot permite a los usuarios realizar consultas de manera natural y recibir
 
 ---
 
-## 📂 Estructura del proyecto
+##  Estructura del proyecto
 
 ```
 FitLab-AI/
@@ -54,7 +54,7 @@ FitLab-AI/
 
 ---
 
-## 🚀 Instalación
+##  Instalación
 
 ### 1. Clonar el repositorio
 
@@ -105,7 +105,7 @@ node server.js
 
 ---
 
-## 💻 Uso
+##  Uso
 
 1. Abrir el navegador.
 
@@ -125,7 +125,7 @@ http://localhost:3000
 
 ---
 
-## 📡 Funcionamiento
+##  Funcionamiento
 
 ```
 Usuario
@@ -151,7 +151,7 @@ Frontend
 
 ---
 
-## 🎯 Objetivo del proyecto
+##  Objetivo del proyecto
 
 El objetivo principal es proporcionar un asistente virtual que complemente la plataforma FitLab, permitiendo responder dudas relacionadas con:
 
@@ -166,7 +166,7 @@ Además, el proyecto sirve como ejemplo de integración entre aplicaciones web y
 
 ---
 
-## 🔒 Seguridad
+##  Seguridad
 
 - La clave de acceso a Hugging Face se almacena mediante variables de entorno.
 - El frontend nunca expone las credenciales de la API.
